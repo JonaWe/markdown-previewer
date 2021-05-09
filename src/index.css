@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow: hidden;
 }
 
 textarea {
@@ -13,4 +14,9 @@ textarea {
   grid-template-rows: 1fr;
   gap: 20px;
   height: 100vh;
+}
+
+.preview {
+  overflow-y: auto;
+  overflow-x: hidden;
 }

@@ -1,8 +1,15 @@
 import './App.css';
+import { useState } from 'react';
+import Textarea from './components/Textarea'
+import Preview from './components/Preview'
 
 const App = () => {
+  const [inputText, setInputText] = useState('');
   return (
-    <h1>Test</h1>
+    <>
+      <Textarea updateText={setInputText} />
+      <Preview text={inputText} />
+    </>
   );
 }
 
